@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   	<!-- Optional Bootstrap theme -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+$(window).scroll(function () {
+if ($(window).scrollTop() >= 50) {
+$('.navbar-default').css('background','white');
+$('.navbar-brand, .nav.navbar-nav.navbar-right li a').css('color','black');
+
+} else {
+$('.navbar-default').css('background','transparent');
+$('.navbar-brand, .nav.navbar-nav.navbar-right li a').css('color','white'); 
+}
+});
+
+
+</script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(function() {
+		$('.firstBox').on('click', function() {
+			
+			$('#modal1').modal('show');   
+		});
+		$('.secondBox').on('click', function() {
+			
+			$('#modal2').modal('show');   
+		});
+		$('.thirdBox').on('click', function() {
+			
+			$('#modal2').modal('show');   
+		});		
+});
+
+</script>
+
+<script src ="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+	<style type = "text/css">
+	@import url('https://fonts.googleapis.com/css?family=Quicksand|Dosis');
+
+	#particles-js{
+  		width: 100%;
+  		background-color: #1B2745;
+  		background-position: 50% 50%;
+  		background-repeat: no-repeat;
+		position: relative;
+		top:0;
+		left:0;		
+		height: 100%;
+		color: white;
+		font-family: Quicksand;
+
+	}
+
+	.navbar-default{
+    		background:transparent;
+   		border:none !important;
+		
+	}
+	
+	.navbar-default .navbar-brand, .nav.navbar-nav.navbar-right li a {
+    		color: white;
+	}
+
+	.colored {
+		color: white;
+	}
+
+	.align-arrow {
+		position:absolute;
+		font-size: 2em;
+		bottom: 20%;
+		left: 50%;
+	}
+
+	.icons8-Java {
+		margin-top: 500px; 
+	}
+
+	.skills{
+    		margin-left: 25%;
+		margin-top: 5%;
+		width:50%;  
+		font-family:Quicksand;    
+    	}	
+    	.progress-bar{
+        	background-color:#9087AB;
+        	color:white;
+    	}
+
+	.row {
+		height:300px;
+		margin:auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top:10%;
+		font-family:Quicksand;
+	}
+
+	.firstBox {
+    		background: url('https://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg') no-repeat;  
+    		position:aboslute;
+		background-size: 100%;
+    		height: 100%;
+		width: 400px;
+		margin-left:1em;
+    		margin-right:1em;
+		text-align:center;
+		color:white;
+		cursor: pointer;
+	}
+
+
+
+	.secondBox {
+		background: url('https://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg') no-repeat;  
+    		position:aboslute;
+		background-size: 100%;
+    		height: 100%;
+		width: 400px;
+		margin-right:1em;
+		text-align:center;
+		color:white;
+		cursor: pointer;   		
+	}
+	.thirdBox {
+		background: url('https://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg') no-repeat;  
+		position:aboslute;
+		background-size: 100%;
+    		height: 100%;
+		width: 400px;
+    		margin-right:1em;
+		text-align:center;
+		color:white;
+		cursor: pointer;
+	}
+
+	.modal-dialog {
+		width:100%;
+		height:auto;
+	}
+
+	#page-container {
+		height: 100%;
+		width: 100%;
+		
+
+	}
+
+	
+	#intro {
+		position: relative;
+		top:0;
+		left:0;		
+		height: 100%;
+		width: 100%;
+		background-color: #E49DAB;
+		color: white;		
+		font-family: Roboto;
+		
+	}
+
+	#about {
+		<!--height: 85%;-->
+		width: 100%;
+	
+	}
+	#portfolio {
+		width: 100%;
+		
+	}
+
+	#contact {
+		<!--height: 50%;-->
+		width: 100%;
+		font-family:Quicksand;
+	}
+
+
+	h1 {
+		
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		
+	}
+	h2 {
+		font-family: Quicksand;
+		text-align: center;
+		color: #395291;
+	}
+
+	table {
+		border-spacing: 5px;
+	}
+
+
+	</style>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Miranda</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>     
+	<li><a href="#portfolio">Portfolio</a></li>    
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</head>
+
+
+
+
+
+<body>
+
+
+	<div id ="page-container">
+		<div id="particles-js">
+
+
+<h1 style="font-size: 4em">Miranda Lin | Informatics | Seattle</h1>
+
+<a href="#about" class="align-arrow"><span class="glyphicon glyphicon-chevron-down colored"></span></a>
+
+
+
+
+<script>
+particlesJS('particles-js',
+  
+  {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
+
+);
+
+</script>
+
+
+
+
+			
+	
+		</div>
+		<div id="about">
+
+			<h2 style="padding-top: 3em;">About Me</h2>
+
+
+<img src = "https://goo.gl/xQLWb6" style="width:auto;height:300px;float:left;margin-left:8%;margin-top:5%;">
+
+			
+			<p style= "margin-top:10%;margin-left:30%;font-size:1.5em;font-family:Quicksand;">Hello! I'm Miranda. I was born in Taiwan
+				and moved to </br>Seattle, Washington 12 years ago.
+				Currently, I am an </br>
+				Informatics undergraduate student 
+				at the University of Washington,
+				</br>aspiring to be an UI/UX designer.
+				Here, I present to you some of my projects, 
+				</br>which includes prototypes 
+				of apps designed
+				for classes, as well as </br>
+				some of my photography and digital editing works. 
+				</br>I hope you enjoy your stay!</p>
+<h2 style="margin-top:15%;">Skills</h2>
+
+<div class="skills">
+	<!-- Progress bar HTML -->
+	<div class="progress progress-striped active">
+		<div class="progress-bar" id="java" style="min-width: 20px;">
+            Java
+        </div>
+    </div>
+    <div class="progress progress-striped active">
+        <div class="progress-bar" id="html" style="min-width: 20px;">
+            HTML
+        </div>
+    </div>
+    <div class="progress progress-striped active">
+        <div class="progress-bar" id="css" style="min-width: 20px;">
+            CSS
+        </div>
+    </div>
+    <div class="progress progress-striped active">
+        <div class="progress-bar" id="photoshop" style="min-width: 20px;">
+            Photoshop
+        </div>
+    </div>
+  
+	
+	 
+	<!-- jQuery Script -->
+	<script type="text/javascript">
+		var i = 0;
+		function makeProgress(){
+			if(i <=45){
+				i = i + 1;
+				$("#java").css("width", i + "%");
+			}
+            if(i <=50) {
+                $("#css").css("width", i + "%");
+            }
+            if (i <= 60) {
+                i++;
+                $("#html").css("width", i + "%");
+            }
+            if (i <= 75) {
+                i++;
+                $("#photoshop").css("width", i + "%");
+            }
+			// Wait for sometime before running this script again
+			setTimeout("makeProgress()", 100);
+		}
+		makeProgress();
+	</script>
+        
+
+
+</div>
+
+
+
+
+
+			
+
+
+
+<div id ="portfolio">
+	<h2 style="padding-top: 3em;">Portfolio</h2>
+	
+<div class="container-fluid">
+  <div class="row">
+    <div class="firstBox col-sm-4"><p style = "margin-top:40%;">test3</p></div>
+    <div class="secondBox col-sm-4"><p style = "margin-top:40%;">test3</p></div>
+    <div class="thirdBox col-sm-4"><p style = "margin-top:40%;">test3</p></div>
+  </div>
+</div>
+		
+
+
+</div> 
+
+
+
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	<p>hello testing123</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	<p>hello testing456</p>
+      	
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id ="contact">
+	<h2 style="padding-top: 3em;">Contact Me</h2>
+<table style="width:50%;margin:auto;margin-top:5%;">
+				
+				<tr>
+			<td><img style= "height:50px;width:auto;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU3IDU3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NyA1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGc+CgkJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0RDRDZDRDsiIHBvaW50cz0iMCw1LjUgMCw0NC41IDI4LDQ0LjUgNTYsNDQuNSA1Niw1LjUgICAiLz4KCQk8cGF0aCBzdHlsZT0iZmlsbDojRThFM0Q5OyIgZD0iTTMwLjk2NSwyNy42MDdjLTEuNjM3LDEuNDYyLTQuMjkyLDEuNDYyLTUuOTMsMGwtMi4wODctMS44NDNDMTYuNDE5LDMxLjU5MSwwLDQ0LjUsMCw0NC41aDIxLjYwNyAgICBoMTIuNzg3SDU2YzAsMC0xNi40MTktMTIuOTA5LTIyLjk0OC0xOC43MzZMMzAuOTY1LDI3LjYwN3oiLz4KCQk8cGF0aCBzdHlsZT0iZmlsbDojRUZFQkRFOyIgZD0iTTAsNS41bDI1LjAzNSwyMi4xMDdjMS42MzcsMS40NjIsNC4yOTIsMS40NjIsNS45MywwTDU2LDUuNUgweiIvPgoJPC9nPgoJPGc+CgkJPHBhdGggc3R5bGU9ImZpbGw6I0YwOTM3MjsiIGQ9Ik00NSwzNC43YzAuOTY5LTIuMTgzLDMuMTA5LTQuMiw1LjY4NC00LjJjMy40NjcsMCw1Ljk2NCwyLjgyMSw2LjI3OCw2LjE4MyAgICBjMCwwLDAuMTcsMC44MzUtMC4yMDMsMi4zMzdjLTAuNTA4LDIuMDQ2LTEuNzAxLDMuODY0LTMuMzExLDUuMjUxTDQ1LDUxLjVsLTguNDQ3LTcuMjI5Yy0xLjYxLTEuMzg3LTIuODAzLTMuMjA1LTMuMzExLTUuMjUxICAgIGMtMC4zNzMtMS41MDItMC4yMDMtMi4zMzctMC4yMDMtMi4zMzdjMC4zMTQtMy4zNjIsMi44MTEtNi4xODMsNi4yNzgtNi4xODNDNDEuODkxLDMwLjUsNDQuMDMxLDMyLjUxNyw0NSwzNC43eiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+			
+			
+
+
+			mlin0119@uw.edu
+			</td>
+
+
+			<td><img style= "height:50px;width:auto;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGRDI0RDsiIGQ9Ik01MTIsMTI5LjAyOUM1MTIsNTcuNzcsNDM5LjI1NywwLDM0OS41MzMsMGMtODkuNzMxLDAtMTYyLjQ2Nyw1Ny43Ny0xNjIuNDY3LDEyOS4wMjkgIGMwLDYzLjY2Myw1OC4wNTYsMTE2LjU1NCwxMzQuNDE5LDEyNy4xMDhoLTAuMjMxYzQuMDA3LDI0LjYxNC0zLjM4Niw1MC43NDktMjIuMTkxLDY5LjczM2M0MC4zNDksMCw3My42NTctMzAuMzg5LDc4LjcxNi02OS43MjkgIGgtMC4yMzFDNDUzLjkyMSwyNDUuNTk2LDUxMiwxOTIuNzAxLDUxMiwxMjkuMDI5eiIvPgo8Zz4KCTxjaXJjbGUgc3R5bGU9ImZpbGw6I0YxNDc0MjsiIGN4PSIyOTIuMjYxIiBjeT0iMTI5LjAyNCIgcj0iMTEuMzc4Ii8+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGMTQ3NDI7IiBjeD0iNDA2LjgwMSIgY3k9IjEyOS4wMjQiIHI9IjExLjM3OCIvPgoJPGNpcmNsZSBzdHlsZT0iZmlsbDojRjE0NzQyOyIgY3g9IjM0OS41MzYiIGN5PSIxMjkuMDI0IiByPSIxMS4zNzgiLz4KPC9nPgo8cGF0aCBzdHlsZT0iZmlsbDojMUI0MTQ1OyIgZD0iTTM0OS45OTgsNDExLjc1NGMtMjQuNTktMjQuNTg5LTUwLjkyNi00NS4yODgtNTAuOTI2LTQ1LjI4OEwyNjAuNyw0MDQuODM4TDEwNy4xNjIsMjUxLjMgIGwzOC4zNzItMzguMzczYzAsMC0yMC42OTgtMjYuMzM2LTQ1LjI4OC01MC45MjZjLTI0LjU5LTI0LjU4OS01MC45MjYtNDUuMjg4LTUwLjkyNi00NS4yODhTMy4zNDMsMTU5LjAxLDAuMjUsMTkyLjU1OCAgYy00LjEzNyw0NC45MDQsNDMuMzk1LDEyNi41NDUsMTE4LjAyMSwyMDEuMTcyYzc0LjYyNiw3NC42MjUsMTU2LjI2NywxMjIuMTU3LDIwMS4xNzEsMTE4LjAyMSAgYzMzLjU0Ny0zLjA5NCw3NS44NDUtNDkuMDcxLDc1Ljg0NS00OS4wNzFTMzc0LjU4OCw0MzYuMzQyLDM0OS45OTgsNDExLjc1NHoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+			
+			425-209-8691
+			</td>
+
+			<td><img style= "height:50px;width:autp;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1NTEuMDM0IDU1MS4wMzQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU1MS4wMzQgNTUxLjAzNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyNzUuNTE3IiB5MT0iNC41NyIgeDI9IjI3NS41MTciIHkyPSI1NDkuNzIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA1NTQpIj4KCQk8c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFMDlCM0QiLz4KCQk8c3RvcCBvZmZzZXQ9IjAuMyIgc3R5bGU9InN0b3AtY29sb3I6I0M3NEM0RCIvPgoJCTxzdG9wIG9mZnNldD0iMC42IiBzdHlsZT0ic3RvcC1jb2xvcjojQzIxOTc1Ii8+CgkJPHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNzAyNEM0Ii8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8xXyk7IiBkPSJNMzg2Ljg3OCwwSDE2NC4xNTZDNzMuNjQsMCwwLDczLjY0LDAsMTY0LjE1NnYyMjIuNzIyICAgYzAsOTAuNTE2LDczLjY0LDE2NC4xNTYsMTY0LjE1NiwxNjQuMTU2aDIyMi43MjJjOTAuNTE2LDAsMTY0LjE1Ni03My42NCwxNjQuMTU2LTE2NC4xNTZWMTY0LjE1NiAgIEM1NTEuMDMzLDczLjY0LDQ3Ny4zOTMsMCwzODYuODc4LDB6IE00OTUuNiwzODYuODc4YzAsNjAuMDQ1LTQ4LjY3NywxMDguNzIyLTEwOC43MjIsMTA4LjcyMkgxNjQuMTU2ICAgYy02MC4wNDUsMC0xMDguNzIyLTQ4LjY3Ny0xMDguNzIyLTEwOC43MjJWMTY0LjE1NmMwLTYwLjA0Niw0OC42NzctMTA4LjcyMiwxMDguNzIyLTEwOC43MjJoMjIyLjcyMiAgIGM2MC4wNDUsMCwxMDguNzIyLDQ4LjY3NiwxMDguNzIyLDEwOC43MjJMNDk1LjYsMzg2Ljg3OEw0OTUuNiwzODYuODc4eiIvPgoJCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8yXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyNzUuNTE3IiB5MT0iNC41NyIgeDI9IjI3NS41MTciIHkyPSI1NDkuNzIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA1NTQpIj4KCQk8c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFMDlCM0QiLz4KCQk8c3RvcCBvZmZzZXQ9IjAuMyIgc3R5bGU9InN0b3AtY29sb3I6I0M3NEM0RCIvPgoJCTxzdG9wIG9mZnNldD0iMC42IiBzdHlsZT0ic3RvcC1jb2xvcjojQzIxOTc1Ii8+CgkJPHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNzAyNEM0Ii8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8yXyk7IiBkPSJNMjc1LjUxNywxMzNDMTk2LjkzMywxMzMsMTMzLDE5Ni45MzMsMTMzLDI3NS41MTZzNjMuOTMzLDE0Mi41MTcsMTQyLjUxNywxNDIuNTE3ICAgUzQxOC4wMzQsMzU0LjEsNDE4LjAzNCwyNzUuNTE2UzM1NC4xMDEsMTMzLDI3NS41MTcsMTMzeiBNMjc1LjUxNywzNjIuNmMtNDguMDk1LDAtODcuMDgzLTM4Ljk4OC04Ny4wODMtODcuMDgzICAgczM4Ljk4OS04Ny4wODMsODcuMDgzLTg3LjA4M2M0OC4wOTUsMCw4Ny4wODMsMzguOTg4LDg3LjA4Myw4Ny4wODNDMzYyLjYsMzIzLjYxMSwzMjMuNjExLDM2Mi42LDI3NS41MTcsMzYyLjZ6Ii8+CgkKCQk8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzNfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjQxOC4zMSIgeTE9IjQuNTciIHgyPSI0MTguMzEiIHkyPSI1NDkuNzIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA1NTQpIj4KCQk8c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFMDlCM0QiLz4KCQk8c3RvcCBvZmZzZXQ9IjAuMyIgc3R5bGU9InN0b3AtY29sb3I6I0M3NEM0RCIvPgoJCTxzdG9wIG9mZnNldD0iMC42IiBzdHlsZT0ic3RvcC1jb2xvcjojQzIxOTc1Ii8+CgkJPHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNzAyNEM0Ii8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPGNpcmNsZSBzdHlsZT0iZmlsbDp1cmwoI1NWR0lEXzNfKTsiIGN4PSI0MTguMzEiIGN5PSIxMzQuMDciIHI9IjM0LjE1Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+			
+			mirandalin0119
+			</td>
+</tr>
+</table>
+</div>
+
+
+</body>
+
+
+
+</html>
