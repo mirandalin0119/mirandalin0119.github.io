@@ -89,33 +89,21 @@ $(function() {
 		margin-top: 500px;
 	}
 
-	.skills{
-    		margin-left: 25%;
-		margin-top: 5%;
-		width:50%;
-		font-family:Quicksand;
-    	}
-    	.progress-bar{
-        	background-color:#9087AB;
-        	color:white;
-    	}
-
 	.row {
-		height:300px;
+		height:auto;
 		margin:auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-top:10%;
+		margin-top:1em;
 		font-family:Quicksand;
 	}
 
 	.firstBox {
-    		background: url('https://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg') no-repeat;
+    		background: url('http://duncanlock.net/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png') no-repeat;
     		position:aboslute;
-		background-size: 100%;
-    		height: 100%;
-		width: 400px;
+    		height: 300px;
+		width: 250px;
 		margin-left:1em;
     		margin-right:1em;
 		text-align:center;
@@ -126,22 +114,33 @@ $(function() {
 
 
 	.secondBox {
-		background: url('https://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg') no-repeat;
-    		position:aboslute;
-		background-size: 100%;
-    		height: 100%;
-		width: 400px;
+		background: url('http://mcleanmuslims.org/wp-content/uploads/2014/02/500x300.gif') no-repeat;
+		position:aboslute;
+    		height: 300px;
+		width: 500px;
 		margin-right:1em;
 		text-align:center;
 		color:white;
 		cursor: pointer;
 	}
 	.thirdBox {
-		background: url('https://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg') no-repeat;
-		position:aboslute;
-		background-size: 100%;
-    		height: 100%;
+
+		background: url('http://holder.ninja/400x300.svg') no-repeat;
+    		position:aboslute;
+    		height: 300px;
 		width: 400px;
+		margin-left:1em;
+    		margin-right:1em;
+		text-align:center;
+		color:white;
+		cursor: pointer;
+	}
+	.fourthBox {
+
+		background: url('https://placehold.it/350x300') no-repeat;
+    		position:aboslute;
+    		height: 300px;
+		width: 350px;
     		margin-right:1em;
 		text-align:center;
 		color:white;
@@ -176,10 +175,16 @@ $(function() {
 	#about {
 		<!--height: 85%;-->
 		width: 100%;
+		padding-top: 5%;
+
 
 	}
 	#portfolio {
 		width: 100%;
+		background-color: #eeeff1;
+		padding-top: 5%;
+		margin-top: 10%;
+		padding-bottom: 9%;
 
 	}
 
@@ -187,6 +192,7 @@ $(function() {
 		<!--height: 50%;-->
 		width: 100%;
 		font-family:Quicksand;
+		padding-top: 5%;
 	}
 
 
@@ -209,6 +215,7 @@ $(function() {
 
 	table {
 		border-spacing: 5px;
+
 	}
 
 
@@ -252,7 +259,7 @@ $(function() {
 		<div id="particles-js">
 
 
-<h1 style="font-size: 4em">Miranda Lin | Informatics | Seattle</h1>
+<h1 style="font-size: 4em">Miranda Lin</h1>
 
 <a href="#about" class="align-arrow"><span class="glyphicon glyphicon-chevron-down colored"></span></a>
 
@@ -390,97 +397,38 @@ particlesJS('particles-js',
 
 		</div>
 		<div id="about">
-
-			<h2 style="padding-top: 3em;">About Me</h2>
-
-
-<img src = "https://goo.gl/xQLWb6" style="width:auto;height:300px;float:left;margin-left:8%;margin-top:5%;">
+<div class="container">
 
 
-			<p style= "margin-top:10%;margin-left:30%;font-size:1.5em;font-family:Quicksand;">Hello! I'm Miranda. I was born in Taiwan
-				and moved to </br>Seattle, Washington 12 years ago.
-				Currently, I am an </br>
-				Informatics undergraduate student
-				at the University of Washington,
-				</br>aspiring to be an UI/UX designer.
-				Here, I present to you some of my projects,
-				</br>which includes prototypes
-				of apps designed
-				for classes, as well as </br>
-				some of my photography and digital editing works.
-				</br>I hope you enjoy your stay!</p>
-<h2 style="margin-top:15%;">Skills</h2>
+			<h2>About</h2>
 
-<div class="skills">
-	<!-- Progress bar HTML -->
-	<div class="progress progress-striped active">
-		<div class="progress-bar" id="java" style="min-width: 20px;">
-            Java
-        </div>
-    </div>
-    <div class="progress progress-striped active">
-        <div class="progress-bar" id="html" style="min-width: 20px;">
-            HTML
-        </div>
-    </div>
-    <div class="progress progress-striped active">
-        <div class="progress-bar" id="css" style="min-width: 20px;">
-            CSS
-        </div>
-    </div>
-    <div class="progress progress-striped active">
-        <div class="progress-bar" id="photoshop" style="min-width: 20px;">
-            Photoshop
-        </div>
-    </div>
+<div class ="text-center col-md-4 hidden-sm">
+<img src = "https://goo.gl/xQLWb6" style="width:auto;height:300px;margin-top:3%;display:inline-block;">
+</div>
+<div class ="self-intro col-md-6 col-sm-12" style = "margin-top:5%;">
+			<p style= "display:block;font-size:1.5em;font-family:Quicksand;">Hello! I'm Miranda. I am an
+				Informatics undergraduate student at the University of Washington, aspiring to be an UI/UX designer.
+				Here, I present to you some of my projects, which includes prototypes
+				of apps designed for classes, as well as some of my photography and digital editing works.
+				I hope you enjoy your stay!</p>
 
-
-
-	<!-- jQuery Script -->
-	<script type="text/javascript">
-		var i = 0;
-		function makeProgress(){
-			if(i <=45){
-				i = i + 1;
-				$("#java").css("width", i + "%");
-			}
-            if(i <=50) {
-                $("#css").css("width", i + "%");
-            }
-            if (i <= 60) {
-                i++;
-                $("#html").css("width", i + "%");
-            }
-            if (i <= 75) {
-                i++;
-                $("#photoshop").css("width", i + "%");
-            }
-			// Wait for sometime before running this script again
-			setTimeout("makeProgress()", 100);
-		}
-		makeProgress();
-	</script>
-
-
-
+</div>
+</div>
 </div>
 
 
-
-
-
-
-
-
-
+<!-- turn padding into 10%? and change margin top of each box-->
 <div id ="portfolio">
-	<h2 style="padding-top: 3em;">Portfolio</h2>
+	<h2>Portfolio</h2>
 
 <div class="container-fluid">
-  <div class="row">
-    <div class="firstBox col-sm-4"><p style = "margin-top:40%;">test3</p></div>
-    <div class="secondBox col-sm-4"><p style = "margin-top:40%;">test3</p></div>
-    <div class="thirdBox col-sm-4"><p style = "margin-top:40%;">test3</p></div>
+  <div class="row" style="margin-top:3%;">
+    <div class="firstBox col-md-4 col-sm-6 col-xs-12"><p style = "margin-top:40%;">test3</p></div>
+    <div class="secondBox col-md-8 col-sm-6 col-xs-12"><p style = "margin-top:40%;">test3</p></div>
+	</div>
+<div class = "row">
+    <div class="thirdBox col-md-6 col-sm-6 col-xs-12"><p style = "margin-top:40%;">test3</p></div>
+    <div class="fourthBox col-md-6 col-sm-6 col-xs-12"><p style = "margin-top:40%;">test3</p></div>
   </div>
 </div>
 
@@ -517,7 +465,7 @@ particlesJS('particles-js',
 
 
 <div id ="contact">
-	<h2 style="padding-top: 3em;">Contact Me</h2>
+	<h2>Contact Me</h2>
 <table style="width:50%;margin:auto;margin-top:5%;">
 
 				<tr>
