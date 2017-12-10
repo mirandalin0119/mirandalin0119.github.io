@@ -23,27 +23,6 @@ $('.navbar-brand, .nav.navbar-nav.navbar-right li a').css('color','white');
 
 
 </script>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-$(function() {
-		$('.firstBox').on('click', function() {
-
-			$('#modal1').modal('show');
-		});
-		$('.secondBox').on('click', function() {
-
-			$('#modal2').modal('show');
-		});
-		$('.thirdBox').on('click', function() {
-
-			$('#modal2').modal('show');
-		});
-});
-
-</script>
-
 <script src ="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 
@@ -58,7 +37,7 @@ $(function() {
 		position: relative;
 		top:0;
 		left:0;
-		height: 100%;
+		height: 100vh;
 		color: white;
 		font-family: Quicksand;
 
@@ -81,8 +60,16 @@ $(function() {
 	.align-arrow {
 		position:absolute;
 		font-size: 2em;
-		bottom: 20%;
+		bottom: 15%;
 		left: 50%;
+	}
+
+	.align-intro-contacts {
+		position:absolute;
+		font-size: 2em;
+		bottom: 35%;
+		left: 49%;
+
 	}
 
 	.icons8-Java {
@@ -100,7 +87,8 @@ $(function() {
 	}
 
 	.firstBox {
-    		background: url('http://duncanlock.net/images/posts/better-figures-images-plugin-for-pelican/dummy-250x300.png') no-repeat;
+
+				background-color: #bddef2;
     		position:aboslute;
     		height: 300px;
 		width: 250px;
@@ -112,9 +100,8 @@ $(function() {
 	}
 
 
-
 	.secondBox {
-		background: url('http://mcleanmuslims.org/wp-content/uploads/2014/02/500x300.gif') no-repeat;
+		background-color: #FBCAA5;
 		position:aboslute;
     		height: 300px;
 		width: 500px;
@@ -123,9 +110,11 @@ $(function() {
 		color:white;
 		cursor: pointer;
 	}
+
 	.thirdBox {
 
-		background: url('http://holder.ninja/400x300.svg') no-repeat;
+
+		background-color: #A1A5C8;
     		position:aboslute;
     		height: 300px;
 		width: 400px;
@@ -135,9 +124,9 @@ $(function() {
 		color:white;
 		cursor: pointer;
 	}
-	.fourthBox {
 
-		background: url('https://placehold.it/350x300') no-repeat;
+	.fourthBox {
+		background-color: #C8ACA1;
     		position:aboslute;
     		height: 300px;
 		width: 350px;
@@ -147,18 +136,10 @@ $(function() {
 		cursor: pointer;
 	}
 
-	.modal-dialog {
-		width:100%;
-		height:auto;
-	}
-
 	#page-container {
 		height: 100%;
 		width: 100%;
-
-
 	}
-
 
 	#intro {
 		position: relative;
@@ -240,7 +221,7 @@ $(function() {
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">About</a></li>
 	<li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+
 
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -260,6 +241,11 @@ $(function() {
 
 
 <h1 style="font-size: 4em">Miranda Lin</h1>
+
+<div class = "align-intro-contacts">
+<a href = "mailto:mlin0119@uw.edu"><img style= "height:25px;width:auto;" src="pictures/email-white.png"></a>
+<a href = "https://www.instagram.com/mirandalin0119/"><img style= "height:21px;width:auto;" src="pictures/instagram-white.png"></a>
+</div>
 
 <a href="#about" class="align-arrow"><span class="glyphicon glyphicon-chevron-down colored"></span></a>
 
@@ -412,6 +398,9 @@ particlesJS('particles-js',
 				of apps designed for classes, as well as some of my photography and digital editing works.
 				I hope you enjoy your stay!</p>
 
+
+
+
 </div>
 </div>
 </div>
@@ -423,12 +412,12 @@ particlesJS('particles-js',
 
 <div class="container-fluid">
   <div class="row" style="margin-top:3%;">
-    <div class="firstBox col-md-4 col-sm-6 col-xs-12"><p style = "margin-top:40%;">test3</p></div>
-    <div class="secondBox col-md-8 col-sm-6 col-xs-12"><p style = "margin-top:40%;">test3</p></div>
+    <a href = "choreman.html"><div class="firstBox col-md-4 col-sm-6 col-xs-12"><p style = "margin-top:80%;color:black;font-size:20px;">Choreman</p></div></a>
+    <a href = "hospital.html"><div class="secondBox col-md-8 col-sm-6 col-xs-12"><p style = "margin-top:15%;color:black;font-size:20px;">Hospitals for Hearts</p></div></a>
 	</div>
 <div class = "row">
-    <div class="thirdBox col-md-6 col-sm-6 col-xs-12"><p style = "margin-top:40%;">test3</p></div>
-    <div class="fourthBox col-md-6 col-sm-6 col-xs-12"><p style = "margin-top:40%;">test3</p></div>
+    <div class="thirdBox col-md-6 col-sm-6 col-xs-12"><p style = "margin-top:20%;color:black;font-size:20px;">Under Construction</p></div>
+    <div class="fourthBox col-md-6 col-sm-6 col-xs-12"><p style = "margin-top:70%;color:black;font-size:20px;">Under Construction</p></div>
   </div>
 </div>
 
@@ -438,55 +427,26 @@ particlesJS('particles-js',
 
 
 
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-	<p>hello testing123</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-	<p>hello testing456</p>
 
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 
 
 <div id ="contact">
-	<h2>Contact Me</h2>
-<table style="width:50%;margin:auto;margin-top:5%;">
+
+<table style="width:8%;margin:auto;margin-top:5%;">
 
 				<tr>
-			<td><img style= "height:50px;width:auto;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU3IDU3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NyA1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGc+CgkJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0RDRDZDRDsiIHBvaW50cz0iMCw1LjUgMCw0NC41IDI4LDQ0LjUgNTYsNDQuNSA1Niw1LjUgICAiLz4KCQk8cGF0aCBzdHlsZT0iZmlsbDojRThFM0Q5OyIgZD0iTTMwLjk2NSwyNy42MDdjLTEuNjM3LDEuNDYyLTQuMjkyLDEuNDYyLTUuOTMsMGwtMi4wODctMS44NDNDMTYuNDE5LDMxLjU5MSwwLDQ0LjUsMCw0NC41aDIxLjYwNyAgICBoMTIuNzg3SDU2YzAsMC0xNi40MTktMTIuOTA5LTIyLjk0OC0xOC43MzZMMzAuOTY1LDI3LjYwN3oiLz4KCQk8cGF0aCBzdHlsZT0iZmlsbDojRUZFQkRFOyIgZD0iTTAsNS41bDI1LjAzNSwyMi4xMDdjMS42MzcsMS40NjIsNC4yOTIsMS40NjIsNS45MywwTDU2LDUuNUgweiIvPgoJPC9nPgoJPGc+CgkJPHBhdGggc3R5bGU9ImZpbGw6I0YwOTM3MjsiIGQ9Ik00NSwzNC43YzAuOTY5LTIuMTgzLDMuMTA5LTQuMiw1LjY4NC00LjJjMy40NjcsMCw1Ljk2NCwyLjgyMSw2LjI3OCw2LjE4MyAgICBjMCwwLDAuMTcsMC44MzUtMC4yMDMsMi4zMzdjLTAuNTA4LDIuMDQ2LTEuNzAxLDMuODY0LTMuMzExLDUuMjUxTDQ1LDUxLjVsLTguNDQ3LTcuMjI5Yy0xLjYxLTEuMzg3LTIuODAzLTMuMjA1LTMuMzExLTUuMjUxICAgIGMtMC4zNzMtMS41MDItMC4yMDMtMi4zMzctMC4yMDMtMi4zMzdjMC4zMTQtMy4zNjIsMi44MTEtNi4xODMsNi4yNzgtNi4xODNDNDEuODkxLDMwLjUsNDQuMDMxLDMyLjUxNyw0NSwzNC43eiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
-
-
-
-
-			mlin0119@uw.edu
+			<td><a href = "mailto:mlin0119@uw.edu"><img style= "height:30px;width:auto;" src="pictures/email.png"></a>
 			</td>
 
 
-			<td><img style= "height:50px;width:auto;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGRDI0RDsiIGQ9Ik01MTIsMTI5LjAyOUM1MTIsNTcuNzcsNDM5LjI1NywwLDM0OS41MzMsMGMtODkuNzMxLDAtMTYyLjQ2Nyw1Ny43Ny0xNjIuNDY3LDEyOS4wMjkgIGMwLDYzLjY2Myw1OC4wNTYsMTE2LjU1NCwxMzQuNDE5LDEyNy4xMDhoLTAuMjMxYzQuMDA3LDI0LjYxNC0zLjM4Niw1MC43NDktMjIuMTkxLDY5LjczM2M0MC4zNDksMCw3My42NTctMzAuMzg5LDc4LjcxNi02OS43MjkgIGgtMC4yMzFDNDUzLjkyMSwyNDUuNTk2LDUxMiwxOTIuNzAxLDUxMiwxMjkuMDI5eiIvPgo8Zz4KCTxjaXJjbGUgc3R5bGU9ImZpbGw6I0YxNDc0MjsiIGN4PSIyOTIuMjYxIiBjeT0iMTI5LjAyNCIgcj0iMTEuMzc4Ii8+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGMTQ3NDI7IiBjeD0iNDA2LjgwMSIgY3k9IjEyOS4wMjQiIHI9IjExLjM3OCIvPgoJPGNpcmNsZSBzdHlsZT0iZmlsbDojRjE0NzQyOyIgY3g9IjM0OS41MzYiIGN5PSIxMjkuMDI0IiByPSIxMS4zNzgiLz4KPC9nPgo8cGF0aCBzdHlsZT0iZmlsbDojMUI0MTQ1OyIgZD0iTTM0OS45OTgsNDExLjc1NGMtMjQuNTktMjQuNTg5LTUwLjkyNi00NS4yODgtNTAuOTI2LTQ1LjI4OEwyNjAuNyw0MDQuODM4TDEwNy4xNjIsMjUxLjMgIGwzOC4zNzItMzguMzczYzAsMC0yMC42OTgtMjYuMzM2LTQ1LjI4OC01MC45MjZjLTI0LjU5LTI0LjU4OS01MC45MjYtNDUuMjg4LTUwLjkyNi00NS4yODhTMy4zNDMsMTU5LjAxLDAuMjUsMTkyLjU1OCAgYy00LjEzNyw0NC45MDQsNDMuMzk1LDEyNi41NDUsMTE4LjAyMSwyMDEuMTcyYzc0LjYyNiw3NC42MjUsMTU2LjI2NywxMjIuMTU3LDIwMS4xNzEsMTE4LjAyMSAgYzMzLjU0Ny0zLjA5NCw3NS44NDUtNDkuMDcxLDc1Ljg0NS00OS4wNzFTMzc0LjU4OCw0MzYuMzQyLDM0OS45OTgsNDExLjc1NHoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
-
-			425-209-8691
+			<td><a href = "https://www.instagram.com/mirandalin0119/"><img style= "height:26px;width:auto;" src="pictures/instagram.png"></a>
 			</td>
 
-			<td><img style= "height:50px;width:autp;" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1NTEuMDM0IDU1MS4wMzQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU1MS4wMzQgNTUxLjAzNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyNzUuNTE3IiB5MT0iNC41NyIgeDI9IjI3NS41MTciIHkyPSI1NDkuNzIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA1NTQpIj4KCQk8c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFMDlCM0QiLz4KCQk8c3RvcCBvZmZzZXQ9IjAuMyIgc3R5bGU9InN0b3AtY29sb3I6I0M3NEM0RCIvPgoJCTxzdG9wIG9mZnNldD0iMC42IiBzdHlsZT0ic3RvcC1jb2xvcjojQzIxOTc1Ii8+CgkJPHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNzAyNEM0Ii8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8xXyk7IiBkPSJNMzg2Ljg3OCwwSDE2NC4xNTZDNzMuNjQsMCwwLDczLjY0LDAsMTY0LjE1NnYyMjIuNzIyICAgYzAsOTAuNTE2LDczLjY0LDE2NC4xNTYsMTY0LjE1NiwxNjQuMTU2aDIyMi43MjJjOTAuNTE2LDAsMTY0LjE1Ni03My42NCwxNjQuMTU2LTE2NC4xNTZWMTY0LjE1NiAgIEM1NTEuMDMzLDczLjY0LDQ3Ny4zOTMsMCwzODYuODc4LDB6IE00OTUuNiwzODYuODc4YzAsNjAuMDQ1LTQ4LjY3NywxMDguNzIyLTEwOC43MjIsMTA4LjcyMkgxNjQuMTU2ICAgYy02MC4wNDUsMC0xMDguNzIyLTQ4LjY3Ny0xMDguNzIyLTEwOC43MjJWMTY0LjE1NmMwLTYwLjA0Niw0OC42NzctMTA4LjcyMiwxMDguNzIyLTEwOC43MjJoMjIyLjcyMiAgIGM2MC4wNDUsMCwxMDguNzIyLDQ4LjY3NiwxMDguNzIyLDEwOC43MjJMNDk1LjYsMzg2Ljg3OEw0OTUuNiwzODYuODc4eiIvPgoJCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8yXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyNzUuNTE3IiB5MT0iNC41NyIgeDI9IjI3NS41MTciIHkyPSI1NDkuNzIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA1NTQpIj4KCQk8c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFMDlCM0QiLz4KCQk8c3RvcCBvZmZzZXQ9IjAuMyIgc3R5bGU9InN0b3AtY29sb3I6I0M3NEM0RCIvPgoJCTxzdG9wIG9mZnNldD0iMC42IiBzdHlsZT0ic3RvcC1jb2xvcjojQzIxOTc1Ii8+CgkJPHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNzAyNEM0Ii8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPHBhdGggc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8yXyk7IiBkPSJNMjc1LjUxNywxMzNDMTk2LjkzMywxMzMsMTMzLDE5Ni45MzMsMTMzLDI3NS41MTZzNjMuOTMzLDE0Mi41MTcsMTQyLjUxNywxNDIuNTE3ICAgUzQxOC4wMzQsMzU0LjEsNDE4LjAzNCwyNzUuNTE2UzM1NC4xMDEsMTMzLDI3NS41MTcsMTMzeiBNMjc1LjUxNywzNjIuNmMtNDguMDk1LDAtODcuMDgzLTM4Ljk4OC04Ny4wODMtODcuMDgzICAgczM4Ljk4OS04Ny4wODMsODcuMDgzLTg3LjA4M2M0OC4wOTUsMCw4Ny4wODMsMzguOTg4LDg3LjA4Myw4Ny4wODNDMzYyLjYsMzIzLjYxMSwzMjMuNjExLDM2Mi42LDI3NS41MTcsMzYyLjZ6Ii8+CgkKCQk8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzNfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjQxOC4zMSIgeTE9IjQuNTciIHgyPSI0MTguMzEiIHkyPSI1NDkuNzIiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA1NTQpIj4KCQk8c3RvcCBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNFMDlCM0QiLz4KCQk8c3RvcCBvZmZzZXQ9IjAuMyIgc3R5bGU9InN0b3AtY29sb3I6I0M3NEM0RCIvPgoJCTxzdG9wIG9mZnNldD0iMC42IiBzdHlsZT0ic3RvcC1jb2xvcjojQzIxOTc1Ii8+CgkJPHN0b3Agb2Zmc2V0PSIxIiBzdHlsZT0ic3RvcC1jb2xvcjojNzAyNEM0Ii8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPGNpcmNsZSBzdHlsZT0iZmlsbDp1cmwoI1NWR0lEXzNfKTsiIGN4PSI0MTguMzEiIGN5PSIxMzQuMDciIHI9IjM0LjE1Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
 
-			mirandalin0119
-			</td>
 </tr>
 </table>
 </div>
