@@ -24,19 +24,6 @@ $('.navbar-brand, .nav.navbar-nav.navbar-right li a').css('color','white');
 });
 
 
-// Show/Hide buttons
-$(document).ready(function(){
-
-	<!-- Problem interactivity-->
-    $("#hideproblem").hide();
-		$("#hideproblembutton").click(function(){
-        $("#hideproblem").hide();
-    });
-    $("#showproblembutton").click(function(){
-        $("#hideproblem").show();
-    });
-
-});
 
 </script>
 
@@ -75,6 +62,7 @@ $(document).ready(function(){
 
 	.row {
 		height:auto;
+    width:auto;
 		margin:auto;
 		display: flex;
 		align-items: center;
@@ -82,6 +70,22 @@ $(document).ready(function(){
 		margin-top:1em;
 		font-family:Quicksand;
 	}
+
+  .firstBox {
+    position:aboslute;
+    height: auto;
+		width: 100%;
+	}
+
+  .imgpreview {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 
 	.expandbuttons {
     background-color: #395291;
@@ -94,15 +98,12 @@ $(document).ready(function(){
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-}
-
+	}
 
 	#main {
 		<!--height: 85%;-->
 		width: 100%;
 		padding-top: 5%;
-
-
 	}
 
 	#contact {
@@ -132,22 +133,10 @@ $(document).ready(function(){
 		font-size: 3em;
 	}
 
-	h4 {
-		font-family: Quicksand;
-		color: #395291;
-	}
-
-	p {
-		display:block;
-		font-size:1.2em;
-		font-family:Quicksand;
-	}
-
 	table {
 		border-spacing: 5px;
 
 	}
-
 
 	</style>
 
@@ -183,87 +172,92 @@ $(document).ready(function(){
 
 
 <body>
+  <div id="main">
+    <div class="container-fluid">
+      <h2>Photography & Digital Editing</h2>
 
-
-		<div id="main">
-<div class="container">
-
-
-	<h2>Hospitals for Hearts</h2>
-	<center><p>Alex Huang, Kevin Lim, Miranda Lin, Jacob Lu </p></center>
-
-	<div class ="self-intro col-sm-12" style = "margin-top:5%;">
-		<h4>Introduction</h4>
-	<p>
-	Coronary artery disease (CAD) is the most common heart disease, and is the leading cause of
-  death for both men and women in the U.S.
-</p>
-
-
-	<div id = "hideproblem">
-<p>
-	</br>
-  CAD occurs when arteries become narrowed due to
-  buildup of cholesterol and plaque in the inner walls. As a result, the heart is unable to
-  receive adequate amounts of blood from arteries. Blood clots then form, causing heart attacks
-  which will inflict permanent damage on the heart. CAD also weakens heart muscle overtime,
-  if not treated. Coronary artery bypass graft (CABG) is a surgery that creates new routes for
-  blood flow to the heart. This surgery is meant for people suffering from CAD, and is one of
-  the most common major surgeries performed in the U.S. The graft for the is usually a vein
-  from the leg or inner chest wall.
-  </br>
-  </br>
-  Our project provides patients and their family with a comparison tool to see hospitals' statistics
-  and ratings in the areas of heart failure, heart attacks, and CABG. Specifically, we focus on hospitals
-  on the west coast, which includes Washington, Oregon, and California.
-</p>
-	</div>
-	</br>
-
-	<button id="showproblembutton" class = "expandbuttons">Show More</button>
-	<button id="hideproblembutton" class = "expandbuttons">Show Less</button>
-
-</br>
-</br>
-</br>
-</br>
-
-<p>
-	<h4>Data</h4>
-<p>
-	The data presented in this project was retrieved from Data.Medicare.gov, which can be
-  accessed <a href = "https://data.medicare.gov/">here</a>. Data.Medicare.gov provides
-  access to official data from hospitals across the United States under the Centers for
-  Medicare & Medicaid Services (CMS). Various categories, such as Hospital, Nursing Home,
-  and Physician Compare datasets can all be found there. Additionally, many comparisons
-  of interest are available at the hospital, state, and national levels.
-
-</p>
-
-<p>
-</br>
-</br>
-</br>
-	<center>
-    <h4>View project <a href = "https://alexh5.shinyapps.io/INFO201FinalProject/">here</a></h4>
-
-
-
-    <div style="margin-top: 10%">
-			<a href = "choreman.html"><button class = "expandbuttons">Previous Project: Choreman</button></a>
-    <a href = "photography.html"><button class = "expandbuttons">Next Project: Digital Editing</button></a>
+      <div class ="self-intro col-sm-12" style = "margin-top:5%;">
+    	<p style= "display:block;font-size:1.2em;font-family:Quicksand;">
+        Each of the photo presented below has been edited through Adobe Photoshop
+        by me. Additionally, except for the first and third photo
+        (the ones with person(s) in them), all pictures were taken by myself.
+      </p>
     </div>
 
-</center>
+      <div class="row" style="margin-top:15%;">
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/alki.jpg"/>
+        </div>
 
-	</p>
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/taipei.jpg"/>
+        </div>
 
-	</div>
-	</div>
-	</div>
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/golden.jpg"/>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:3%;">
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/eggtart.jpg"/>
+        </div>
+
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/cake1.jpg"/>
+        </div>
+
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/cake2.jpg"/>
+        </div>
+
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/creampuff.jpg"/>
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top:3%;">
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/buddha.jpg"/>
+        </div>
+
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/stars.jpg"/>
+        </div>
+
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/sunset.jpg"/>
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top:3%;">
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/dorm.jpg"/>
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-top:3%;">
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/snow.jpg"/>
+        </div>
+
+        <div class="firstBox col-sm-6">
+          <img class="imgpreview" src="pictures/potlatch.jpg"/>
+        </div>
+      </div>
 
 
 
+    </div>
+  </div>
+
+	<center><div style="margin-top: 10%">
+		<a href = "hospital.html"><button class = "expandbuttons">Prev Project: Hospitals for Hearts</button></a>
+		<a href = "index.html#portfolio"><button class = "expandbuttons">Back to All Projects</button></a>
+	</div></center>
 
 
 
