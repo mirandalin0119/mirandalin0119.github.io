@@ -25,53 +25,6 @@ $('.navbar-brand, .nav.navbar-nav.navbar-right li a').css('color','white');
 });
 
 
-// Show/Hide buttons
-$(document).ready(function(){
-
-    <!-- Planning interactivity-->
-    $("#hideplanning").hide();
-    $("#hideplanningbutton").hide();
-		$("#hideplanningbutton").click(function(){
-        $("#showplanningbutton").show();
-        $("#hideplanning").hide();
-        $("#hideplanningbutton").hide();
-    });
-    $("#showplanningbutton").click(function(){
-        $("#hideplanning").show();
-        $("#hideplanningbutton").show();
-        $("#showplanningbutton").hide();
-    });
-
-    <!-- Designing interactivity-->
-    $("#hidedesign").hide();
-    $("#hidedesignbutton").hide();
-    $("#hidedesignbutton").click(function(){
-      $("#showdesignbutton").show();
-      $("#hidedesign").hide();
-      $("#hidedesignbutton").hide();
-    });
-    $("#showdesignbutton").click(function(){
-      $("#hidedesign").show();
-      $("#hidedesignbutton").show();
-      $("#showdesignbutton").hide();
-    });
-
-		<!-- Implementing interactivity-->
-		$("#hideimplement").hide();
-		$("#hideimplementbutton").hide();
-		$("#hideimplementbutton").click(function(){
-			$("#showimplementbutton").show();
-			$("#hideimplement").hide();
-			$("#hideimplementbutton").hide();
-		});
-		$("#showimplementbutton").click(function(){
-			$("#hideimplement").show();
-			$("#hideimplementbutton").show();
-			$("#showimplementbutton").hide();
-		});
-
-});
-
 </script>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
@@ -107,16 +60,6 @@ $(document).ready(function(){
 		margin-top: 500px;
 	}
 
-	.row {
-		height:auto;
-		margin:auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top:1em;
-		font-family:Quicksand;
-	}
-
 	.expandbuttons {
     background-color: #395291;
     border: none;
@@ -130,14 +73,34 @@ $(document).ready(function(){
     cursor: pointer;
 }
 
+	#page-container {
+		height: 100%;
+		width: 100%;
+	}
 
 	#main {
-		<!--height: 85%;-->
 		width: 100%;
 		padding-top: 5%;
-
-
 	}
+
+	#planning {
+		width: 100%;
+		margin-top: 5%;
+	}
+
+	#design {
+		width: 100%;
+		padding-top: 5%;
+		margin-top: 5%;
+		padding-bottom: 5%;
+		background-color: #eeeff1;
+	}
+
+	#implement {
+		width: 100%;
+		margin-top: 5%;
+	}
+
 
 	#contact {
 		width: auto;
@@ -169,6 +132,8 @@ $(document).ready(function(){
 	h4 {
 		font-family: Quicksand;
 		color: #395291;
+		font-size: 2em;
+		font-weight: bold;
 	}
 
 	p {
@@ -177,10 +142,6 @@ $(document).ready(function(){
 		font-family:Quicksand;
 	}
 
-	table {
-		border-spacing: 5px;
-
-	}
 
   ul {
 		font-family:Quicksand;
@@ -227,254 +188,42 @@ $(document).ready(function(){
 <body>
 
 
-		<div id="main">
-<div class="container">
+		<div id ="main">
+<div class="page-container">
 
 
 	<h2>Porfolio Design</h2>
 
-	<div class ="self-intro col-sm-12" style = "margin-top:5%;">
-    <h4>Introduction</h4>
-    <p>
-      This page details the process I went through to design my overall portfolio site.
-      Specifically, I will discuss what I did in the following three stages:
-      <ol>
-        <li> Planning </li>
-        <li> Designing </li>
-        <li> Implementing </li>
-      </ol>
-    </p>
 
-		</br>
-		</br>
-
-    <h4>Planning</h4>
-    <p> In the planning process, I first looked for inspiration, then decided the different
-      pages and sections to be included in my portfolio. Next, I searched and decided on the resources
-      to use for the design and implementation process.
-    </p>
-
-    <div id = "hideplanning">
-    </br>
-    <p>
-
-      <b> Inspiration: </b> To find inspiration, I searched the web to examine various UI/UX designer's
-      portfolio and noted elements that caught my attention.
-
-      </br>
-      </br>
-      <b> Pages/Sections: </b> After finding inspiration, I listed out the different pages and sections
-      to include in my portfolio. Initially, this included:
-    </p>
-
-    <ul>
-      <li> landing cover page </li>
-      <li> home page </li>
-      <ul>
-        <li> about me </li>
-        <li> skills </li>
-        <li> projects preview </li>
-        <li> contact me </li>
-      </ul>
-      <li> separate pages for each project </li>
-    </ul>
-
-    <p>
-      However, at the implementation stage, I decided to leave out the skills section in the home page.
-
-      </br>
-      </br>
-      <b> Resources: </b> Finally, I gathered and listed out the resources I needed to carry out the
-      design and implementation process. For brainstorming and designing the layout of the portfolio,
-      I decided to use <a href = "https://www.figma.com"> Figma</a>. For implementation, I decided
-      to use <a href = "https://pages.github.com/"> GitHub Pages </a> to host my portfolio.
-      Other resources include:
-    </p>
-
-    <ul>
-      <li> <a href = "https://www.adobe.com/products/photoshop.html"> Adobe Photoshop CC </a> </li>
-      <li> <a href = "https://color.adobe.com/create/color-wheel/"> Adobe Color CC </a> </li>
-      <li> <a href = "https://fonts.google.com/"> Google Fonts </a> </li>
-      <li> <a href = "https://www.flaticon.com/"> Flaticon </a> </li>
-      <li> <a href = "http://vincentgarreau.com/particles.js/"> particles.js </a> </li>
-    </ul>
-
-    </div>
-    </br>
-    <button id="showplanningbutton" class = "expandbuttons">Show More</button>
-  	<button id="hideplanningbutton" class = "expandbuttons">Show Less</button>
-
-    </br>
-    </br>
-    </br>
-    </br>
-    <h4>Designing</h4>
-    <p> To visualize the layout of my portfolio and guide me in the implementation process,
-      I created wireframes to represent the overall framework. Then, I explored different typography
-      and color schemes for the interface.
-    </p>
-
-    <div id = "hidedesign">
-      <p>
-        Using <a href = "https://www.figma.com"> Figma </a>, I roughly visioned how the pages and sections
-        I planned will appear. See "Wireframes" section on bottom of page to see the screen designs.
-				</br>
-				</br>
-				<b>Landing Screen & Navigation Bar: </b> Taking inspiration from other UI/UX portfolios I've seen, I decided to
-        have a landing cover page that will cover the user's whole screen and serve as a welcome.
-				I designed this landing screen to include my name and location, as well as
-        an "Enter" button to take the user to the main body screen. (However, in implementation, I took
-        out my location and replaced "Enter" button with a down arrow.)
-        The navigation bar located at the top of the screen is also visible on the cover page,
-        as well as from any section and page of the portfolio.
-
-        </br>
-        </br>
-
-        <b>Main Body: </b> Upon clicking on the "Enter" button (now: down arrow) or simply scrolling down, the user will navigate
-        to the main body screen. This includes four sections in the following order: About me,
-        Skills (take out in implementation), Projects, and Contact Me.
-				</br>
-				</br>
-				<b> About Me & Skills: </b> The About Me section includes a picture
-        of me and a brief paragraph, while the Skills section was planned to list some of my technical skills.
-        Each partially colored horizontal bar was to represent my expertise of a particular skill. The more
-        filled in a bar, the more knowledge and experience I have in regards to that skill.
-				</br>
-				</br>
-				<b> Projects & Contact Information: </b>Next, the Projects section includes a preview picture of the different projects
-				I've created or contributed to. Clicking on a picture will display an overlay screen
-				that describes the associated project. Lastly, the Contact Me section will serve as the footer.
-				An icon will be displayed as well as the actual contact information.
-
-        </br>
-        </br>
-
-        <b> Individual Project Screens: </b> I also wireframed a sample layout for the project overlay screen. The title of the project will be
-        displayed at the top of the page aligned to the center. Below will be different headings, pargraphs,
-        and visualizations or prototypes if applicable. To exit the overlay, the user can click on
-        the "X" located on the top right or click anywhere else other than the overlay (click background gray area).
-
-        </br>
-        </br>
-
-				<b>Color & Typography: </b> The main color used in the portfolio is a navy blue (#1B2745).
-				I chose this color because blue is a calming colors; its neutral tone makes it easy on
-				users' eyes. Similarly, another shade of blue (#395291) is used for headings. As for the font,
-				I chose Google Font's <i>Quicksand</i> to use throughout the portfolio.
-
-      </p>
-
-    </div>
-    </br>
-    <button id="showdesignbutton" class = "expandbuttons">Show More</button>
-    <button id="hidedesignbutton" class = "expandbuttons">Show Less</button>
-
-
-		</br>
-		</br>
-		</br>
-		</br>
-		<h4>Implementing</h4>
-		<p>
-			In the implementation process, I started coding my portfolio as invisioned in the
-			design phase. Inevitably, I went back and forth between designing and coding during
-			this stage.
-		</p>
-
-		<div id = "hideimplement">
-			<p>
-				<b> Landing Screen & Navigation Bar: </b> Like the wireframe, the landing screen consists of
-				my name. However, I decided to take out my location following my name to make the design even more
-				simple and straightforward. Additionally, I added my contact information right below my name,
-				as represented by icons. I also changed the "Enter" button to a simple down arrow. Users can click
-				the arrow or scroll down to see the main body screen. The animated background of the landing screen
-				is from particles.js, and the navigation bar was created with Bootstrap's navbar component. At the
-				very top of the screen, the navbar blends in with the navy blue background of the landing page.
-				However, upon scrolling, the navbar turns into a white background. This was designed like so to
-				not distract users from the main body content.
-
-				</br>
-				</br>
-
-				<b> About Me & Skills: </b> The About Me section was done with a simple portrait and a brief
-				paragraph just like what I had designed in the wireframe. As for the Skills section that I had
-				planned for, I decided to take this out, because the placement appeared awkward when I actually
-				coded the screen. A screenshot of this implementation can be seen below this paragraph.
-				The Skills section may be implemented in the future, but for now, I believe that each project
-				itself is sufficient to illustrate my skills.
-			</p>
-
-			<center>
-				<img src = "pictures/ogskills.png" style="width:auto;height:300px;margin-top:2%;margin-right:5%;display:inline-block;">
-			</center>
-
-			<p>
-				<b> Projects: </b> Though I originally designed the project section to be presented in a row, with
-				a preview picture to represent each project, I decided to redesign this to make the preview pictures
-				appear larger to the user. So, I went back to Figma and designed an unaligned grid. However, after
-				implementing the unaligned grid, I decided to change the design again. The unaligned grid appears to
-				be too concentrated together, especially with no blank spaces between projects. With my original
-				intention in mind, which was to enlarge the preview pictures, I went for a simple design that
-				combines elements from the first two designs. In short, in the design now, I enlarged the preview
-				pictures and placed two projects per row. This ensures that not only are preview pictures large, but
-				the blank spaces also guarantees that the pictures do not seem too clustered.
-
-				</br>
-				</br>
-
-				When the user hovers over a preview picture, an overlay screen appears over the preview and the
-				project title is displayed to provide a brief context of the project.
-
-				</br>
-				</br>
-
-				<b> Contact Information: </b> I first implemented this section according to my wireframe.
-				A screenshot of this can be seen below this paragraph. Afterwards, I decided to implement the contact
-				information section with only icons taken from Favicon, and no text. Clicking on an icon will take
-				the user to the relevant page associated. I also decided to add a horizontal dotted line across
-				the page to emphasize that the contact section is a footer. For this reason, I also took out
-				the "Contact" link that I originally designed on the navigation bar, as seen in the wireframe.
-
-			</p>
-
-				<center>
-					<img src = "pictures/ogcontact.png" style="width:auto;height:130px;margin-top:2%;margin-right:5%;display:inline-block;">
-				</center>
-				</br>
-				</br>
-
-			<p>
-				<b> Individual Project Screens: </b> Whereas I invisioned each project to be presented through an
-				overlay over the main body screen, I changed this so that when users click on a project, they are
-				taken to a completely new page that only contains the project. Not only does doing so allow a more
-				full screen experience, but it also establishes the fact that my projects are important, and not
-				just a pop-up overlay message.
-
-			</p>
-
-		</div>
-		</br>
-    <button id="showimplementbutton" class = "expandbuttons">Show More</button>
-    <button id="hideimplementbutton" class = "expandbuttons">Show Less</button>
-
-		</br>
-		</br>
-		</br>
-		</br>
-		<h4>Wireframes</h4>
+		<div id = "planning">
+			<div id = "container-fluid">
 		<center>
-			<img src = "pictures/cover.png" style="width:auto;height:300px;margin-top:2%;margin-right:5%;display:inline-block;">
-			<img src = "pictures/home.png" style="width:auto;height:300px;margin-top:2%;display:inline-block;">
-			<img src = "pictures/projectlayout.png" style="width:auto;height:300px;margin-top:5%;margin-right:5%;display:inline-block;">
-			<img src = "pictures/exproject.png" style="width:auto;height:300px;margin-top:5%;display:inline-block;">
+		<img src = "pictures/planningprocess.png" style="width:80%;height:auto;margin-top:1%;display:inline-block;">
+		</center>
+			</div>
+		</div>
 
 
 
+<div id = "design">
+	<center>
+    <h4>Designing</h4>
+		<img src = "pictures/designingprocess.png" style="width:80%;height:auto;margin-top:1%;display:inline-block;">
+	</center>
+</div>
 
+<div id = "implement">
+	<center>
+		<h4>Implementing</h4>
+		<img src = "pictures/implementprocess.png" style="width:80%;height:auto;margin-top:1%;display:inline-block;">
+	</center>
+</div>
+
+
+		<center>
 		<div style="margin-top: 10%">
-			<a href = "hospital.html"><button class = "expandbuttons">Previous Project: Hospitals for Hearts</button></a>
-		<a href = "photography.html"><button class = "expandbuttons">Next Project: Digital Editing</button></a>
+			<a href = "choreman.html"><button class = "expandbuttons">Previous Project: Choreman</button></a>
+		<a href = "hospital.html"><button class = "expandbuttons">Next Project: Hospitals for Hearts</button></a>
 		</div>
 		</center>
 

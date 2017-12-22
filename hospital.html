@@ -30,11 +30,16 @@ $(document).ready(function(){
 
 	<!-- Problem interactivity-->
     $("#hideproblem").hide();
+		$("#hideproblembutton").hide();
 		$("#hideproblembutton").click(function(){
         $("#hideproblem").hide();
+				$("#hideproblembutton").hide();
+				$("#showproblembutton").show();
     });
     $("#showproblembutton").click(function(){
         $("#hideproblem").show();
+				$("#hideproblembutton").show();
+				$("#showproblembutton").hide();
     });
 
 });
@@ -251,8 +256,8 @@ $(document).ready(function(){
 
 
     <div style="margin-top: 10%">
-			<a href = "choreman.html"><button class = "expandbuttons">Previous Project: Choreman</button></a>
-    <a href = "website.html"><button class = "expandbuttons">Next Project: Portfolio Design</button></a>
+			<a href = "website.html"><button class = "expandbuttons">Previous Project: Portfolio Design</button></a>
+    <a href = "photography.html"><button class = "expandbuttons">Next Project: Digital Editing</button></a>
     </div>
 
 </center>

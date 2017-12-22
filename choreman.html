@@ -30,47 +30,72 @@ $(document).ready(function(){
 
 	<!-- Problem interactivity-->
     $("#hideproblem").hide();
+		$("#hideproblembutton").hide();
 		$("#hideproblembutton").click(function(){
-        $("#hideproblem").hide();
+			$("#hideproblem").hide();
+			$("#hideproblembutton").hide();
+			$("#showproblembutton").show();
     });
     $("#showproblembutton").click(function(){
         $("#hideproblem").show();
+				$("#hideproblembutton").show();
+				$("#showproblembutton").hide();
     });
 
 		<!-- Solutions interactivity-->
 		$("#hidesolution").hide();
+		$("#hidesolutionbutton").hide();
 		$("#hidesolutionbutton").click(function(){
 				$("#hidesolution").hide();
+				$("#hidesolutionbutton").hide();
+				$("#showsolutionbutton").show();
 		});
 		$("#showsolutionbutton").click(function(){
 				$("#hidesolution").show();
+				$("#hidesolutionbutton").show();
+				$("#showsolutionbutton").hide();
 		});
 
 		<!-- Evaluation interactivity-->
 		$("#hideeval").hide();
+		$("#hideevalbutton").hide();
 		$("#hideevalbutton").click(function(){
 				$("#hideeval").hide();
+				$("#hideevalbutton").hide();
+				$("#showevalbutton").show();
 		});
 		$("#showevalbutton").click(function(){
 				$("#hideeval").show();
+				$("#hideevalbutton").show();
+				$("#showevalbutton").hide();
 		});
 
 		<!-- Limitations interactivity-->
 		$("#hidelimitations").hide();
+		$("#hidelimitationsbutton").hide();
 		$("#hidelimitationsbutton").click(function(){
 				$("#hidelimitations").hide();
+				$("#hidelimitationsbutton").hide();
+				$("#showlimitationsbutton").show();
 		});
 		$("#showlimitationsbutton").click(function(){
 				$("#hidelimitations").show();
+				$("#hidelimitationsbutton").show();
+				$("#showlimitationsbutton").hide();
 		});
 
 		<!-- User Doc interactivity-->
 		$("#hideuserdoc").hide();
+		$("#hideuserdocbutton").hide();
 		$("#hideuserdocbutton").click(function(){
 				$("#hideuserdoc").hide();
+				$("#hideuserdocbutton").hide();
+				$("#showuserdocbutton").show();
 		});
 		$("#showuserdocbutton").click(function(){
 				$("#hideuserdoc").show();
+				$("#hideuserdocbutton").show();
+				$("#showuserdocbutton").hide();
 		});
 
 });
@@ -271,9 +296,10 @@ $(document).ready(function(){
 	</br>
 	</br>
 	<h4> User Personas </h4>
+	<center>
 	<img src = "pictures/persona1.jpg" style="width:auto;height:300px;margin-top:2%;display:inline-block;">
 	<img src = "pictures/persona2.jpg" style="width:auto;height:300px;margin-top:2%;display:inline-block;">
-
+	</center>
 
 
 </br>
@@ -622,7 +648,7 @@ under the edit button. Lastly, at the bottom left of the page is the Logout butt
 
 	<center><div style="margin-top: 10%">
 		<a href = "index.html#portfolio"><button class = "expandbuttons">Back to All Projects</button></a>
-		<a href = "hospital.html"><button class = "expandbuttons">Next Project: Hospitals for Hearts</button></a>
+		<a href = "website.html"><button class = "expandbuttons">Next Project: Portfolio Design</button></a>
 	</div></center>
 
 
