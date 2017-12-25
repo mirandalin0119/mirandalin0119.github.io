@@ -25,25 +25,6 @@ $('.navbar-brand, .nav.navbar-nav.navbar-right li a').css('color','white');
 });
 
 
-// Show/Hide buttons
-$(document).ready(function(){
-
-	<!-- Problem interactivity-->
-    $("#hideproblem").hide();
-		$("#hideproblembutton").hide();
-		$("#hideproblembutton").click(function(){
-        $("#hideproblem").hide();
-				$("#hideproblembutton").hide();
-				$("#showproblembutton").show();
-    });
-    $("#showproblembutton").click(function(){
-        $("#hideproblem").show();
-				$("#hideproblembutton").show();
-				$("#showproblembutton").hide();
-    });
-
-});
-
 </script>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
@@ -79,16 +60,6 @@ $(document).ready(function(){
 		margin-top: 500px;
 	}
 
-	.row {
-		height:auto;
-		margin:auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top:1em;
-		font-family:Quicksand;
-	}
-
 	.expandbuttons {
     background-color: #395291;
     border: none;
@@ -102,13 +73,19 @@ $(document).ready(function(){
     cursor: pointer;
 }
 
+	#page-container {
+		height: 100%;
+		width: 100%;
+	}
 
 	#main {
-		<!--height: 85%;-->
 		width: 100%;
 		padding-top: 5%;
+	}
 
-
+	#redesign {
+		width: 100%;
+		margin-top: 5%;
 	}
 
 	#contact {
@@ -141,6 +118,8 @@ $(document).ready(function(){
 	h4 {
 		font-family: Quicksand;
 		color: #395291;
+		font-size: 2em;
+		font-weight: bold;
 	}
 
 	p {
@@ -149,10 +128,14 @@ $(document).ready(function(){
 		font-family:Quicksand;
 	}
 
-	table {
-		border-spacing: 5px;
 
-	}
+  ul {
+		font-family:Quicksand;
+  }
+
+  ol {
+		font-family:Quicksand;
+  }
 
 
 	</style>
@@ -191,85 +174,34 @@ $(document).ready(function(){
 <body>
 
 
-		<div id="main">
-<div class="container">
+		<div id ="main">
+<div class="page-container">
 
 
-	<h2>Hospitals for Hearts</h2>
-	<center><p>Alex Huang, Kevin Lim, Miranda Lin, Jacob Lu </p></center>
-
-	<div class ="self-intro col-sm-12" style = "margin-top:5%;">
-		<h4>Introduction</h4>
-	<p>
-	Coronary artery disease (CAD) is the most common heart disease, and is the leading cause of
-  death for both men and women in the U.S.
-</p>
+	<h2>Dell's Product Webpage Redesign</h2>
 
 
-	<div id = "hideproblem">
-<p>
-	</br>
-  CAD occurs when arteries become narrowed due to
-  buildup of cholesterol and plaque in the inner walls. As a result, the heart is unable to
-  receive adequate amounts of blood from arteries. Blood clots then form, causing heart attacks
-  which will inflict permanent damage on the heart. CAD also weakens heart muscle overtime,
-  if not treated. Coronary artery bypass graft (CABG) is a surgery that creates new routes for
-  blood flow to the heart. This surgery is meant for people suffering from CAD, and is one of
-  the most common major surgeries performed in the U.S. The graft for the is usually a vein
-  from the leg or inner chest wall.
-  </br>
-  </br>
-  Our project provides patients and their family with a comparison tool to see hospitals' statistics
-  and ratings in the areas of heart failure, heart attacks, and CABG. Specifically, we focus on hospitals
-  on the west coast, which includes Washington, Oregon, and California.
-</p>
-	</div>
-	</br>
 
-	<button id="showproblembutton" class = "expandbuttons">Show More</button>
-	<button id="hideproblembutton" class = "expandbuttons">Show Less</button>
 
-</br>
-</br>
-</br>
-</br>
-
-<p>
-	<h4>Data</h4>
-<p>
-	The data presented in this project was retrieved from Data.Medicare.gov, which can be
-  accessed <a href = "https://data.medicare.gov/">here</a>. Data.Medicare.gov provides
-  access to official data from hospitals across the United States under the Centers for
-  Medicare & Medicaid Services (CMS). Various categories, such as Hospital, Nursing Home,
-  and Physician Compare datasets can all be found there. Additionally, many comparisons
-  of interest are available at the hospital, state, and national levels.
-
-</p>
-
-<p>
-</br>
-</br>
-</br>
+<div id = "redesign">
 	<center>
-    <h4>View project <a href = "https://alexh5.shinyapps.io/INFO201FinalProject/">here</a></h4>
+
+		<img src = "pictures/dell.png" style="width:80%;height:auto;margin-top:1%;display:inline-block;">
+	</center>
+</div>
 
 
+		<center>
+		<div style="margin-top: 10%">
+  		<a href = "index.html#portfolio"><button class = "expandbuttons">Back to All Projects</button></a>
+  		<a href = "choreman.html"><button class = "expandbuttons">Next Project: Choreman</button></a>
+		</div>
+		</center>
 
-    <div style="margin-top: 10%">
-			<a href = "website.html"><button class = "expandbuttons">Previous Project: Portfolio Design</button></a>
-    <a href = "photography.html"><button class = "expandbuttons">Next Project: Digital Editing</button></a>
-    </div>
-
-</center>
-
-	</p>
 
 	</div>
 	</div>
 	</div>
-
-
-
 
 
 
