@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Miranda Lin</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   	<!-- Optional Bootstrap theme -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+
+// Navbar scroll interactivity
+$(window).scroll(function () {
+if ($(window).scrollTop() >= 50) {
+$('.navbar-default').css('background','white');
+$('.navbar-brand, .nav.navbar-nav.navbar-right li a').css('color','black');
+
+} else {
+$('.navbar-default').css('background','#1B2745');
+$('.navbar-brand, .nav.navbar-nav.navbar-right li a').css('color','white');
+}
+});
+
+
+</script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src ="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+	<style type = "text/css">
+	@import url('https://fonts.googleapis.com/css?family=Quicksand|Dosis');
+
+
+
+	.navbar-default{
+    	background:#1B2745;
+   		border:none !important;
+
+	}
+
+	.navbar-default .navbar-brand, .nav.navbar-nav.navbar-right li a {
+		color: white;
+		font-weight: bold;
+		font-family: Quicksand;
+	}
+
+	.colored {
+		color: white;
+	}
+
+
+	.icons8-Java {
+		margin-top: 500px;
+	}
+
+	.expandbuttons {
+    background-color: #395291;
+    border: none;
+    color: white;
+		font-size: 12px;
+		font-family: Quicksand;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+	#main {
+		width: 100%;
+		padding-top: 5%;
+	}
+
+	#details {
+		padding-top: 5%;
+		margin-bottom: 10%;
+	}
+
+	#contact {
+		width: auto;
+		margin: 10rem 0 0 0;
+		height: auto;
+		font-family:Quicksand;
+		border-top: 2px dotted #1B2745;
+	}
+
+
+	h1 {
+
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+
+	}
+	h2 {
+		font-family: Quicksand;
+		text-align: center;
+		color: #395291;
+		font-size: 3em;
+	}
+
+	h4 {
+		font-family: Quicksand;
+		color: #395291;
+	}
+
+	p {
+		display:block;
+		font-size:1.2em;
+		font-family:Quicksand;
+	}
+
+
+  ul {
+		font-family:Quicksand;
+  }
+
+  ol {
+		font-family:Quicksand;
+  }
+
+
+	</style>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Miranda</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html#about">About</a></li>
+	<li><a href="index.html#portfolio">Portfolio</a></li>
+
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</head>
+
+
+
+
+
+<body>
+
+
+		<div id ="main">
+<div class="container">
+
+
+	<h2>Dell's Product Webpage Redesign</h2>
+
+
+<div id = "details">
+	<div id = "col-sm-12">
+		<h4> Redesign Process </h4>
+		<p>
+			When I visited Dell's XPS 13 laptop's webpage, the first thing I noticed was that the page was
+			very lengthy and presented a lot of information at once. Thus, my main goal in the redesign
+			was to make the webpage simpler so that it serves as an introductory page to attract
+			users to the XPS 13 model in general, and not a page that overwhelms users with various
+			configuration details at once.
+      </br></br><b>Note:</b> This is purely a personal project, and not affiliated with Dell. Photos and
+			information regarding the XPS 13 in courtesy of their official XPS 13 page, which can be accessed
+			<a href= "http://www.dell.com/en-us/shop/dell-laptops/xps-13-laptop/spd/xps-13-9360-laptop"> here. </a>
+
+
+			</br></br>
+
+			<b> Navigation Bar: </b> Because my intention wasn't to redesign Dell's whole site, I kept their blue
+			navigation bar the same to provide consistency between their different pages.
+			</br></br>
+		 	<b> Introduction: </b> In the brief introduction to the XPS 13 right after the navigation bar,
+			the original page has a few lines of text on the left, and a picture/video of the laptop on the right.
+			Though simple already, I decided to make this introductory section more visual by placing an image carousel
+			in the center of the page with the text "XPS 13" on top.
+			</br></br>
+			<center><img src = "pictures/dellredesign1.png" style="width:auto;height:300px;margin-top:2%;display:inline-block;"></center>
+		</p>
+
+
+		<p>
+			</br></br>
+			<b> Features: </b> Right after the image carousel, I listed out four features of the XPS 13. Each feature
+			is represented with an icon and a brief text. Below the four features, I have a "See All Features" button
+			that would take the user to another page (or an overlay) where they'd be able to obtain more details.
+			This is one of the biggest difference between my design and the original, where in the original,
+			there is a designated "Features" section. Though informational, I believe that the original "Features"
+			section contains more details than necessary on a main XPS 13 page, making the overall page too overwhelming.
+			The left side of the image below is only <i> one </i> part of a lengthier "Features" section on Dell's page.
+			</br></br>
+			<center><img src = "pictures/dellredesign2.png" style="width:auto;height:320px;margin-top:2%;display:inline-block;"></center>
+		</p>
+
+
+		<p>
+			</br></br>
+			<b> Configurations: </b> Dell has 4 different filters located at the top of this section, including the laptop's
+			hard drive, memory, operating system, and processor. In my design, I moved these filters to the left hand side
+			instead. Additionally, instead of a dropdown menu, I changed the filter options to radio buttons. I believe
+			that because there isn't a lot of options for each filter, radio buttons simplify the filtering process. I also
+			decided to take out the Operating System filter, because there is only one option present (Windows 10).
+			</br></br>
+			<center><img src = "pictures/dellredesign3.png" style="width:auto;height:340px;margin-top:2%;display:inline-block;"></center>
+		</p>
+
+
+		<p>
+			</br></br>
+		 	I also simplified the configuration information displayed. In their design, Dell first includes summarized
+			information regarding each configuration, with green "View Details" buttons at the end. Then, very detailed
+			configuration information is listed, followed by another set of the green "View Details" buttons. Some of the
+			information listed here is redundant; some details included here have already been included in the summarized
+			section above. Though the design makes it easy for users to compare the different configurations at a detailed
+			level, it also makes the webpage very clustered. Not to mention that Dell already has a
+			comparison tool, as displayed by the "Add to compare" selection boxes next to each configuration,
+			that can help users make comparisons.
+			</br></br>
+			In my redesign, I simplified this section by including only 4 pieces of information for each configuration.
+			These are the same information that Dell listed in its summarized section. Following this, I also have
+			"View Details" buttons, but I changed the color to blue to match the overall color scheme. To compare
+			different configurations in detail, I kept Dell's comparison tool, but moved the "Add to Compare" selection
+			boxes to below the "View Details" buttons. When users choose to compare the different configurations, then
+			they will be displayed additional details like what Dell currently has. Otherwise, I eliminated the whole
+			detailed configurations section from the web page.
+			</br></br>
+			<center><img src = "pictures/dellredesign4.png" style="width:auto;height:340px;margin-top:2%;display:inline-block;"></center>
+		</p>
+
+
+		<p>
+			</br></br>
+			<b> Accessories: </b> Dell split its accessories for XPS 13 into two sections, one being mobile essentials,
+			and the other being work essentials. Each accessory has a picture along with a brief description. I decided
+			to simplify this section by combining the two sections into just one "Essential Accessories" section. In
+			this section, I display the accessories in two rows, and eliminated the descriptions for each accessory, keeping
+			only the picture. To obtain more information regarding each section, the user can click on the accessory.
+			</br></br>
+			<center><img src = "pictures/dellredesign5.png" style="width:auto;height:400px;margin-top:2%;display:inline-block;"></center>
+		</p>
+
+
+		<p>
+			</br></br>
+			<b> Support, Awards: </b> In my redesign, I kept Dell's support section that provides brief descriptions of
+			the three different support services. However, I decided to eliminate the Awards section.
+			</br></br>
+			<center><img src = "pictures/dellredesign6.png" style="width:auto;height:300px;margin-top:2%;display:inline-block;"></center>
+		</p>
+
+
+		<p>
+			</br></br>
+			<b> Reviews: </b> Dell presents this section with bar graph visualizations that provides an overall rating
+			snapshot, followed by specific feedback from users. I simplified this section by keeping only the bar graph
+			visualizations, and eliminated the individual feedbacks from the page. However, users can still see these
+			individual reviews by clicking the "See all Reviews" button located at the bottom right corner of the section.
+			</br></br>
+			<center><img src = "pictures/dellredesign7.png" style="width:auto;height:300px;margin-top:2%;display:inline-block;"></center>
+		</p>
+
+
+		<p>
+			</br></br>
+			<b> Questions, Drivers, Manuals & Support, Suggested Products: </b> I decided to eliminate all 3 of these sections
+			from the main page. I believe that these are important information that users may need, however, I believe that
+			they don't all need to be displayed on the main XPS 13 page. Perhaps there can be links that direct users to
+			these sections, but having such an abundance of information on the page makes the webpage very overwhelming.
+			</br></br>
+			<center><img src = "pictures/dellredesign8.png" style="width:auto;height:700px;margin-top:2%;display:inline-block;"></center>
+		</p>
+	</div>
+</div>
+
+		<center>
+		<div style="margin-top: 10%">
+  		<a href = "dell.html"><button class = "expandbuttons">Back to Dell Redesign Screen</button></a>
+  		<a href = "choreman.html"><button class = "expandbuttons">Next Project: Choreman</button></a>
+		</div>
+		</center>
+
+
+	</div>
+	</div>
+	</div>
+
+
+
+
+	<div id ="contact">
+
+	<table style="width:8%;margin:auto;margin-top:1%;">
+
+					<tr>
+				<td><a href = "mailto:mlin0119@uw.edu"><img style= "height:30px;width:auto;" src="pictures/email.png"></a>
+				</td>
+
+
+				<td><a href = "https://www.instagram.com/mirandalin0119/"><img style= "height:26px;width:auto;" src="pictures/instagram.png"></a>
+				</td>
+
+
+	</tr>
+</table>
+	</div>
+
+
+</body>
+
+
+
+</html>
