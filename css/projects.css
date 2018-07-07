@@ -1,0 +1,58 @@
+.navbar {
+    background: #1B2745;
+    border: none !important;
+}
+
+.expandbuttons {
+    background-color: #395291;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-family: Quicksand;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 2.3em;
+    margin-top:1em;
+}
+
+h4 {
+    font-family: Quicksand;
+    color: #395291;
+}
+
+p {
+    display: block;
+    font-size: 1.1em;
+    font-family: Quicksand;
+}
+
+#introduction {
+    padding-top: 5%;
+
+}
+
+#preview {
+    margin-top: 15%;
+}
+
+#design {
+    width: 100%;
+    padding-top: 5%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    background-color: #eeeff1;
+}
+
+.modifyh4 {
+    font-size: 1.5em;
+	/* font-weight: bold; */
+}
+
+
+

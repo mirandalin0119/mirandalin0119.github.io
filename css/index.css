@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Dosis');
+
+#particles-js {
+    width: 100%;
+    background-color: #1B2745;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    color: white;
+    font-family: Quicksand;
+}
+
+.navbar {
+    background: transparent;
+    border: none !important;
+    border-radius: 0;
+    /* height: 1rem; */
+    justify-content: start;
+}
+
+.navbar-brand, .navbar .collapse .navbar-nav a {
+    color: white;
+    font-weight: bold;
+    font-family: Quicksand;
+}
+
+.colored {
+    color: white;
+}
+
+.align-arrow {
+    position: absolute;
+    font-size: 2em;
+    bottom: 5em;
+    left: 50%;
+}
+
+/* .align-intro-contacts {
+    position: absolute;
+    font-size: 2em;
+    bottom: 35%;
+    left: 48%;
+    display: inline-block;
+} */
+
+.icons8-Java {
+    margin-top: 500px;
+}
+
+.row {
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: Quicksand;
+} 
+
+.firstBox {
+    position: aboslute;
+    padding: 0 5px 0 5px;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.imgpreview {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 5px 5px #E0E0E0;
+}
+
+.wrap {
+    padding-left: 0;
+    padding-right: 0;   
+}
+
+.overlay {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    color: #1b2745;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    border-radius: 5px;
+}
+
+.wrap:hover .overlay {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+#page-container {
+    height: 100%;
+    width: 100%;
+}
+
+#intro {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #E49DAB;
+    color: white;
+    font-family: Roboto;
+}
+
+#about, #main, #planning, #implement {
+    /* height: 85%; */
+    width: 100%;
+    padding-top: 5%;
+}
+
+#portfolio {
+    width: 100%;
+    /* background-color: #f7f7f9; */
+    padding-top: 5%;
+    margin-top: 10%;
+    padding-bottom: 10%;
+}
+
+#contact {
+    width: auto;
+    height: auto;
+    font-family: Quicksand;
+    border-top: 2px dotted #1B2745;
+}
+
+h1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Quicksand;
+    text-align: center;
+    color: #395291;
+}
+
+table {
+    border-spacing: 5px;
+
+}
+
+.text-center img {
+    width: auto;
+    margin-top:3%;
+    display:inline-block;
+    height:200px;
+}
+
+.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.self-intro p {
+    text-align: center;
+    font-size: 1em;
+    color: #1B2745;
+}
+
+@media(min-width: 768px) { 
+    .offsetI {
+        margin-right: 2rem;
+    }
+    .offsetII {
+        margin-left: 2rem;
+    }
+    .row {
+        margin-top: 4em;
+    }
+    .text-center img {
+        height: 300px;
+    }
+    .self-intro p {
+        text-align:left;
+    }
+}
+
+@media (min-width:992px) {
+    .self-intro p {
+        font-size: 1.5em;
+    }
+}
+
+
