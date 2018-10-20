@@ -54,5 +54,18 @@ p {
 	/* font-weight: bold; */
 }
 
+#problem {
+    text-align: center;
+
+}
+
+#problem .container {
+    display: inline-block;
+}
+
+#fleet_container {
+    max-width: 85%;
+    
+}
 
 

@@ -127,9 +127,14 @@
 #portfolio {
     width: 100%;
     /* background-color: #f7f7f9; */
+    /* background-color: #E2F1F0; */
     padding-top: 5%;
     margin-top: 10%;
     padding-bottom: 10%;
+}
+
+#portfolio a {
+    color: inherit;
 }
 
 #contact {
@@ -160,20 +165,84 @@ table {
 
 }
 
-.text-center img {
+.subtext {
+    font-family: Quicksand;
+    font-size: 1em;
+}
+.prevHAL img {
     width: auto;
     margin-top:3%;
+    margin-left: 20%;
+    display:inline-block;
+    height:480px;
+}
+
+.prevchoreman img {
+    width: auto;
+    margin-top:3%;
+    display:inline-block;
+    height:380px;
+}
+
+.text-center img {
+    width: auto;
     display:inline-block;
     height:200px;
 }
 
-.text-center {
+.prevdisney {
+    height: 500px;
+    background-color: #f2dde2;
+
+}
+
+.prevrestau {
+    height: 500px;
+    background-color: #e7e0d9;
+}
+
+.prevrestau img {
+    width: auto;
+    margin-top:3%;
+    margin-left: 8%;
+    display:inline-block;
+    height:300px;
+}
+
+.prevdisney img {
+    width: auto;
+    margin-top:3%;
+    margin-left: 20%;
+    display:inline-block;
+    height:430px;
+}
+
+.prevHAL {
+    background-color: #E2F1F0;
+    height: 500px;
+}
+
+.prevchoreman {
+    background-color: #f1f1f1;
+    height: 500px;
+}
+.text-center, .prevHAL, .prevchoreman, .prevdisney, .prevrestau {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .self-intro p {
+    text-align: center;
+    font-size: 1em;
+    color: #1B2745;
+}
+
+ul {
+    font-family: Quicksand;
+}
+
+.hal-intro p {
     text-align: center;
     font-size: 1em;
     color: #1B2745;
@@ -200,6 +269,10 @@ table {
 @media (min-width:992px) {
     .self-intro p {
         font-size: 1.5em;
+    }
+
+    .hal-intro p {
+        font-size: 1.3em;
     }
 }
 
