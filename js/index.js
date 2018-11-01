@@ -167,10 +167,17 @@ $.fn.visible = function (partial) {
 
 $(window).scroll(function (event) {
 
-	$("#portfolio .firstBox, #about .row").each(function (i, el) {
+	$("#portfolio .row, #about .row").each(function (i, el) {
 		var el = $(el);
 		if (el.visible(true)) {
-			el.addClass("animated slideInDown");
+			el.addClass("animated fadeInDown");
+		}
+	});
+
+	$("#portfolio .row").each(function (i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+			el.addClass("animated fadeInDown");
 		}
 	});
 });
