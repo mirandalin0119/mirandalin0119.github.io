@@ -20,6 +20,10 @@
 }
 
 @media(min-width:1200px) {
+    body {
+        /* background-color: #eef2f5; */
+        background-color: #ffffff;
+    }
     #construction {
         display: none;
     }
@@ -151,7 +155,6 @@
         width: 100%;
         /* background-color: #f7f7f9; */
         /* background-color: #E2F1F0; */
-        padding-top: 5%;
         margin-top: 10%;
         padding-bottom: 10%;
     }
@@ -180,7 +183,7 @@
     h2 {
         font-family: Quicksand;
         text-align: center;
-        color: #395291;
+        color: #1B2745;
     }
 
     table {
@@ -215,13 +218,15 @@
 
     .prevdisney {
         height: 500px;
-        background-color: #f2dde2;
+        /* background-color: #f2dde2; */
+        background-color: #eef2f5;
+        /* background-color: #ebf4fa; */
 
     }
 
     .prevrestau {
         height: 500px;
-        background-color: #e7e0d9;
+        background-color: #eef2f5;
     }
 
     .prevrestau img {
@@ -241,12 +246,13 @@
     }
 
     .prevHAL {
-        background-color: #E2F1F0;
+        background-color: #eef2f5;
         height: 500px;
     }
 
     .prevchoreman {
-        background-color: #f1f1f1;
+        background-color: #eef2f5;
+        
         height: 500px;
     }
     .text-center, .prevHAL, .prevchoreman, .prevdisney, .prevrestau {
