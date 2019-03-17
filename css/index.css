@@ -279,7 +279,7 @@
     }
 
     .parallax {
-        background-image: url("/pictures/HALpersp.JPG");
+        background-image: url("/pictures/HALpersp.jpg");
         margin-top: 3%;
         /* Set a specific height */
         height: 600px; 
