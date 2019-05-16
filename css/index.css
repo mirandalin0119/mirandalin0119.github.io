@@ -268,7 +268,7 @@
         color: #1B2745;
     }
 
-    ul {
+    ul, ol {
         font-family: Quicksand;
     }
 
@@ -276,20 +276,6 @@
         text-align: center;
         font-size: 1em;
         color: #1B2745;
-    }
-
-    .parallax {
-        background-image: url("/pictures/HALpersp.jpg");
-        margin-top: 3%;
-        /* Set a specific height */
-        height: 600px; 
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
     }
 }
 

@@ -72,5 +72,28 @@ p {
     
 }
 
+.parallax {
+    margin-top: 3%;
+    /* Set a specific height */
+    height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#parallax-hal {
+    background-image: url("/pictures/HALpersp.jpg");
+}
+
+#parallax-del {
+    background-image: url("/pictures/DELpersp.jpg");
+}
+
+
+
 
 
