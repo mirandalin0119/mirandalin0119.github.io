@@ -93,6 +93,10 @@ p {
     background-image: url("/pictures/DELpersp.jpg");
 }
 
+#parallax-spr {
+    background-image: url("/pictures/SPRpersp.png");
+}
+
 
 
 
