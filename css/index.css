@@ -171,7 +171,17 @@
         border-top: 2px dotted #1B2745;
     }
 
-    h1 {
+    .landing-text {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    
+    .landing-text span {
         position: absolute;
         height: 100%;
         width: 100%;

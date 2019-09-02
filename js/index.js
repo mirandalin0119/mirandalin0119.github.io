@@ -136,15 +136,14 @@ $(window).scroll(function () {
 	}
 });
 
+var options = {
+	strings: ["creates meaningful digital experiences.", "is passionate about visual storytelling.", "loves photography and digital editing.", "loves to eat.", "plays piano.", "lives in Seattle."],
+	typeSpeed: 40,
+	loop: true,
+	showCursor: false,
+}
 
-var instance = new TypeIt('.typeeffect', {
-	speed: 110
-});
-
-function stopType() {
-	instance.destroy();
-};
-setTimeout(stopType, 6000);
+var typed = new Typed(".typing", options);
 
 document.querySelector(".align-arrow").addEventListener("click", function () {
 	document.getElementById("about").scrollIntoView({ behavior: "smooth" })
