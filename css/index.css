@@ -24,7 +24,9 @@
     body {
         /* background-color: #eef2f5; */
         background-color: #ffffff;
+        font-family: Quicksand;
     }
+
     #construction {
         display: none;
     }
@@ -192,7 +194,6 @@
     }
 
     h2 {
-        font-family: Quicksand;
         text-align: center;
         color: #1B2745;
     }
