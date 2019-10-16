@@ -10,6 +10,13 @@
 		gtag('js', new Date());
 
 		gtag('config', 'UA-139207877-1');
+
+		var captureOutboundLink = function (url) {
+			ga('send', 'event', 'outbound', 'click', url, {
+				'transport': 'beacon',
+				'hitCallback': function () { document.location = url; }
+			});
+		}
 	</script>
 
 	<title>Miranda Lin</title>
@@ -239,8 +246,11 @@
 
 			</div>
 
-			<b><center>View More Web, App, and Print Designs <a href="https://www.behance.net/mirandalin" target="_blank"> <u>Here</u></a>
-			</center></b>
+			<b>
+				<center>View More Web, App, and Print Designs <a href="https://www.behance.net/mirandalin"
+						target="_blank" onclick="captureOutboundLink('https://www.behance.net/mirandalin')"><u>Here</u></a>
+				</center>
+			</b>
 			</p>
 
 		</div>
