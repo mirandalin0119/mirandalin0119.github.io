@@ -86,6 +86,7 @@
         align-items: center;
         justify-content: center;
         font-family: Quicksand;
+        margin-top: 3%;
     } 
 
     .firstBox {
@@ -164,6 +165,15 @@
 
     #portfolio a {
         color: inherit;
+    }
+
+    #designs {
+        padding-bottom: 10%;
+    }
+
+    #designs img {
+        height: 250px;
+        width: auto;
     }
 
     #contact {
@@ -288,6 +298,7 @@
         font-size: 1em;
         color: #1B2745;
     }
+
 }
 
 /* @media(min-width: 768px) { 

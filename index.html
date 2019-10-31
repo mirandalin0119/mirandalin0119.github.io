@@ -31,6 +31,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- my stylesheet -->
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/lightbox.css">
 
 
 	</style>
@@ -56,7 +57,10 @@
 					<a class="nav-link" href="#about">About</a>
 				</li>
 				<li class="nav-item ml-auto">
-					<a class="nav-link" href="#portfolio">Portfolio</a>
+					<a class="nav-link" href="#portfolio">Case Studies</a>
+				</li>
+				<li class="nav-item ml-auto">
+					<a class="nav-link" href="#designs">All Designs</a>
 				</li>
 				<li class="nav-item ml-auto">
 					<a class="nav-link" href="https://bit.ly/2L8oSVy" target="_blank">Resume</a>
@@ -114,9 +118,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="text-center col-3 hidden-sm">
-						<img src="pictures/snow1.jpg" style="margin-top: 20%">
+						<img src="pictures/snow1.jpg" style="margin-top: 10%">
 					</div>
-					<div class="self-intro col-6" style="margin-top:5%;">
+					<div class="self-intro col-6">
 						<p style="font-family:Quicksand;">Hello, I'm Miranda! I recently graduated <i>magna cum
 								laude</i>
 							from the University of Washington with a BS degree in Informatics. Currently, I'm a UX
@@ -134,13 +138,11 @@
 
 
 
-
-
 		<div id="portfolio">
-			<h2>PORTFOLIO</h2>
+			<h2>CASE STUDIES</h2>
 			<div class="container">
 
-				<div class="row prevHAL" style="margin-top: 3%">
+				<div class="row prevHAL">
 					<div class="col-lg-4 col-md-5 hidden-sm">
 						<img src="pictures/prevDEL.png">
 					</div>
@@ -165,7 +167,7 @@
 				</div>
 
 
-				<div class="row prevHAL" style="margin-top: 3%">
+				<div class="row prevHAL">
 					<div class="col-lg-4 col-md-5 hidden-sm">
 						<img src="pictures/prevHAL.jpg">
 					</div>
@@ -189,7 +191,7 @@
 					</div>
 				</div>
 
-				<div class="row prevrestau" style="margin-top: 3%">
+				<div class="row prevrestau">
 					<div class="col-lg-4 col-md-5 hidden-sm">
 						<img src="pictures/SPRpersp.png">
 					</div>
@@ -215,7 +217,7 @@
 
 				</div>
 
-				<div class="row prevdisney" style="margin-top: 3%">
+				<div class="row prevdisney">
 					<div class="col-lg-4 col-md-5 hidden-sm">
 						<img src="pictures/disney.png">
 					</div>
@@ -238,23 +240,43 @@
 							</u>
 						</p>
 					</div>
+				</div>
+				</br>
+			</div>
+		</div>
 
+
+		<div id="designs">
+			<h2>ALL DESIGNS</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- <p>Input Text Here
+						</p> -->
+
+						<div class="row d-flex justify-content-between">
+							<a href="pictures/diet.png" data-title="Food Tracker App" data-lightbox="designs"><img
+									src="pictures/diet.png"></a>
+							<a href="pictures/news.png" data-title="News App" data-lightbox="designs"><img
+									src="pictures/news.png"></a>
+							<a href="pictures/photographer.png" data-title="Photographer Portfolio"
+								data-lightbox="designs"><img src="pictures/photographer.png"></a>
+							<a href="pictures/wedding.png" data-title="Wedding Cakes Ordering App"
+								data-lightbox="designs"><img src="pictures/wedding.png"></a>
+						</div>
+
+					</div>
 				</div>
 
 				</br>
-
-
+				<b>
+					<center>Check out my <a href="https://www.behance.net/mirandalin" target="_blank"
+							onclick="gtag('event', 'click', {'event_category': 'Outbound Link', 'event_label': 'Behance Link'});"><u>Behance</u></a>
+						for more web, app, and print designs!
+					</center>
+				</b>
 			</div>
-
-			<b>
-				<center>View More Web, App, and Print Designs <a href="https://www.behance.net/mirandalin"
-						target="_blank" onclick="gtag('event', 'click', {'event_category': 'Outbound Link', 'event_label': 'Behance Link'});"><u>Here</u></a>
-				</center>
-			</b>
-			</p>
-
 		</div>
-
 
 
 
@@ -334,7 +356,7 @@
 			crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 		<script src="js/index.js"></script>
-
+		<script src="js/lightbox.js"></script>
 
 
 </body>
