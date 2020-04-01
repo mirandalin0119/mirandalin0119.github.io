@@ -137,7 +137,7 @@ $(window).scroll(function () {
 });
 
 var options = {
-	strings: ["creates meaningful digital experiences.", "is passionate about visual storytelling.", "loves photography and digital editing.", "loves to eat.", "plays piano.", "lives in Seattle."],
+	strings: ["creates meaningful digital experiences.", "is passionate about visual storytelling.", "loves photography and digital editing.", "loves to cook and eat.", "plays piano.", "is from Seattle.", "currently resides in Atlanta."],
 	typeSpeed: 40,
 	loop: true,
 	showCursor: false,
