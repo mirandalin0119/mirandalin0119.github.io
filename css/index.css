@@ -246,9 +246,19 @@
 
     }
 
-    .prevrestau {
-        height: 500px;
-        background-color: #eef2f5;
+    .prevSCT img {
+        width: auto;
+        margin-top:3%;
+        display:inline-block;
+        height:400px;
+    }
+
+    .prevKBG img {
+        width: auto;
+        margin-top:3%;
+        margin-left: 15%;
+        display:inline-block;
+        height:100px;
     }
 
     .prevrestau img {
@@ -267,17 +277,12 @@
         height:430px;
     }
 
-    .prevHAL {
+    .prevrestau, .prevHAL, .prevchoreman, .prevSCT, .prevKBG {
         background-color: #eef2f5;
         height: 500px;
     }
 
-    .prevchoreman {
-        background-color: #eef2f5;
-        
-        height: 500px;
-    }
-    .text-center, .prevHAL, .prevchoreman, .prevdisney, .prevrestau {
+    .text-center, .prevHAL, .prevchoreman, .prevdisney, .prevrestau, .prevSCT, .prevKBG {
         display: flex;
         align-items: center;
         justify-content: center;

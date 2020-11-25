@@ -3,6 +3,17 @@
     border: none !important;
 }
 
+.navbar-sct {
+    background: #E6F2F4;
+    border: none !important;
+}
+
+#navbar-sct-brand, .navbar .navbar-sct-bg .navbar-nav a {
+    color: #1B2745;
+    font-weight: bold;
+    font-family: Quicksand;
+}
+
 .expandbuttons {
     background-color: #395291;
     border: none;
@@ -97,6 +108,9 @@ p {
     background-image: url("/pictures/SPRpersp.png");
 }
 
+#parallax-sct {
+    background-image: url("/pictures/sct-cover.png");
+}
 
 
 
