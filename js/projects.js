@@ -9,6 +9,7 @@ $(window).scroll(function () {
     } else {
         $('.navbar').css('background', '#1B2745');
         $('.navbar-sct').css('background', '#E6F2F4');
+        $('.navbar-ot').css('background', '#EEE4FF');
         $('.navbar-brand, .navbar .collapse .navbar-nav a ').css('color', 'white');
         $('#navbar-sct-brand, .navbar .navbar-sct-bg .navbar-nav a').css('color', '#1B2745');
     }

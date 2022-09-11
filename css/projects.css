@@ -8,6 +8,11 @@
     border: none !important;
 }
 
+.navbar-ot {
+    background: #EEE4FF;
+    border: none !important;
+}
+
 #navbar-sct-brand, .navbar .navbar-sct-bg .navbar-nav a {
     color: #1B2745;
     font-weight: bold;
@@ -47,6 +52,7 @@ p {
 }
 
 #introduction {
+    max-width: 85%;
     padding-top: 5%;
 
 }
@@ -86,7 +92,8 @@ p {
 .parallax {
     margin-top: 3%;
     /* Set a specific height */
-    height: 600px; 
+   /* height: 600px; */
+   height:100vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -110,6 +117,10 @@ p {
 
 #parallax-sct {
     background-image: url("/pictures/sct-cover.png");
+}
+
+#parallax-ot {
+    background-image: url("/pictures/camp.png");
 }
 
 

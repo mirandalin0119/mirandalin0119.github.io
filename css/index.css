@@ -261,6 +261,13 @@
         height:100px;
     }
 
+    .prevOT img {
+        width: auto;
+        margin-top:3%;
+        display:inline-block;
+        height:300px;
+    }
+
     .prevrestau img {
         width: auto;
         margin-top:3%;
@@ -277,12 +284,12 @@
         height:430px;
     }
 
-    .prevrestau, .prevHAL, .prevchoreman, .prevSCT, .prevKBG {
+    .prevrestau, .prevHAL, .prevchoreman, .prevSCT, .prevKBG, .prevOT {
         background-color: #eef2f5;
         height: 500px;
     }
 
-    .text-center, .prevHAL, .prevchoreman, .prevdisney, .prevrestau, .prevSCT, .prevKBG {
+    .text-center, .prevHAL, .prevchoreman, .prevdisney, .prevrestau, .prevSCT, .prevKBG, .prevOT {
         display: flex;
         align-items: center;
         justify-content: center;
